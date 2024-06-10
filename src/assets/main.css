@@ -1,9 +1,9 @@
 /* 2-5.1 - Agregando fuente externa */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 /* 2-5.1 - Agregando fuente local */
 @font-face {
-  font-family: "CascadiaCode";
-  src: url("./fonts/CascadiaCode.ttf");
+  font-family: 'CascadiaCode';
+  src: url('./fonts/CascadiaCode.ttf');
 }
 
 /* 1-5.5 - Agregando archivo de entrada de Tailwind CSS
@@ -21,7 +21,7 @@ body {
 	background-color: #ececec; */
 
   /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
-  @apply gap-custom-size m-10 flex flex-col;
+  @apply flex flex-col gap-custom-size;
   /* 2-2.4 - Usando la clase personalizada que creamos */
 }
 

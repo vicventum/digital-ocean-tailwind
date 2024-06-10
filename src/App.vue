@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import LayoutSubHeader from '@/components/layout/LayoutSubHeader.vue'
 </script>
 
 <template>
@@ -11,9 +12,9 @@ import { RouterView } from 'vue-router'
       </nav>
     </div>
   </header> -->
+  <LayoutSubHeader />
 
   <RouterView />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -4,6 +4,10 @@ module.exports = {
   // 1-5.4 - Especificando los archivos que usarán las clases de Tailwind
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: '1.5rem'
+    },
     extend: {
       // 2-2.3 - Agregando una clase de espaciado personalizada
       spacing: {
