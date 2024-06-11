@@ -13,8 +13,9 @@ const props = defineProps({
 })
 
 const variants = {
-  default: 'bg-do-blue-light text-white',
-  secondary: 'bg-slate-50 border-slate-300 text-do-blue-dark border'
+  default: 'is-default',
+  outlined: 'is-outlined',
+  secondary: 'is-secondary'
 }
 
 const variantClasses = computed(() => variants[props.variant])
@@ -23,7 +24,7 @@ const variantClasses = computed(() => variants[props.variant])
 <template>
   <a
     v-if="href"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-none focus:ring-4"
+    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-dotted focus:outline-2"
     :class="variantClasses"
     :href="href"
   >
@@ -32,9 +33,21 @@ const variantClasses = computed(() => variants[props.variant])
   <button
     v-else
     type="button"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-none focus:ring-4"
+    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-dotted focus:outline-2"
     :class="variantClasses"
   >
     <slot />
   </button>
 </template>
+
+<style scoped>
+.is-default {
+  @apply bg-do-blue-light text-white hover:bg-do-blue-medium active:bg-do-blue-dark;
+}
+.is-outlined {
+  @apply border border-slate-300 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-50;
+}
+.is-secondary {
+  @apply border-slate-300 bg-slate-50 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-100;
+}
+</style>

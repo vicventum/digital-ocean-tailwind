@@ -41,8 +41,8 @@ import BaseButton from '@/components/base/BaseButton.vue'
           </li>
         </ul>
       </nav>
-      <div class="space-x-3">
-        <BaseButton variant="secondary" href="#">Log in</BaseButton>
+      <div class="space-x-2">
+        <BaseButton variant="outlined" href="#">Log in</BaseButton>
         <BaseButton href="#">Sign up</BaseButton>
       </div>
     </div>
