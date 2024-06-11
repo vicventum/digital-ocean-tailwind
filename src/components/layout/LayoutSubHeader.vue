@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconArrowLeft from '@/components/icons/IconArrowLeft.vue'
+import { Icon } from '@iconify/vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import IconArrowLeft from '@/components/icons/IconArrowLeft.vue'
       <span>
         Boost availability, performance, and reliability with more powerful, upgraded Load
         Balancers!
-        <IconArrowLeft class="inline size-3" />
+        <Icon icon="carbon:chevron-right" class="inline size-4" />
       </span>
       <ul class="space-x-3">
         <a href="" class="rounded bg-do-blue-mediumdark px-2 py-1 font-semibold text-sky-400">

@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import LayoutSubHeader from '@/components/layout/LayoutSubHeader.vue'
+import LayoutHeader from '@/components/layout/LayoutHeader.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import LayoutSubHeader from '@/components/layout/LayoutSubHeader.vue'
     </div>
   </header> -->
   <LayoutSubHeader />
+  <LayoutHeader />
 
   <RouterView />
 </template>
