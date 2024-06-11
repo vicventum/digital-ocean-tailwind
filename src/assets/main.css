@@ -21,7 +21,7 @@ body {
 	background-color: #ececec; */
 
   /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
-  @apply flex flex-col gap-custom-size;
+  /* @apply flex flex-col gap-custom-size; */
   /* 2-2.4 - Usando la clase personalizada que creamos */
 }
 

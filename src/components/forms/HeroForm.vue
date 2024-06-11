@@ -6,9 +6,22 @@ import BaseButton from '@/components/base/BaseButton.vue'
 <template>
   <form class="space-y-6">
     <div class="flex flex-col gap-4">
-      <input class="rounded-lg border border-slate-250 px-4 py-3 shadow-md" type="text" />
-      <input class="rounded-lg border border-slate-250 px-4 py-3 shadow-md" type="text" />
-      <input class="rounded-lg border border-slate-250 px-4 py-3 shadow-md" type="password" />
+      <!-- ? Agrega clases de sombra personalizadas -->
+      <input
+        class="border-slate-250 shadow-input hover:shadow-input-focus focus:shadow-input-focus rounded-lg border px-4 py-3 outline-none focus:border-slate-300"
+        type="text"
+        placeholder="First name"
+      />
+      <input
+        class="border-slate-250 shadow-input hover:shadow-input-focus focus:shadow-input-focus rounded-lg border px-4 py-3 outline-none focus:border-slate-300"
+        type="email"
+        placeholder="Email"
+      />
+      <input
+        class="border-slate-250 shadow-input hover:shadow-input-focus focus:shadow-input-focus rounded-lg border px-4 py-3 outline-none focus:border-slate-300"
+        type="password"
+        placeholder="Password"
+      />
     </div>
 
     <div class="flex gap-x-2">
@@ -23,5 +36,3 @@ import BaseButton from '@/components/base/BaseButton.vue'
     </div>
   </form>
 </template>
-
-<style lang="scss" scoped></style>

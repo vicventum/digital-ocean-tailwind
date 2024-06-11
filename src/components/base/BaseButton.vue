@@ -48,6 +48,6 @@ const variantClasses = computed(() => variants[props.variant])
   @apply border border-slate-300 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-50;
 }
 .is-secondary {
-  @apply border-slate-300 bg-slate-50 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-100;
+  @apply border-slate-300 bg-slate-50 text-do-blue-dark hover:bg-slate-100 focus:bg-slate-100;
 }
 </style>
