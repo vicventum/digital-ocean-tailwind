@@ -15,7 +15,8 @@ const props = defineProps({
 const variants = {
   default: 'is-default',
   outlined: 'is-outlined',
-  secondary: 'is-secondary'
+  secondary: 'is-secondary',
+  link: 'is-link'
 }
 
 const variantClasses = computed(() => variants[props.variant])
@@ -49,5 +50,8 @@ const variantClasses = computed(() => variants[props.variant])
 }
 .is-secondary {
   @apply border-slate-300 bg-slate-50 text-do-blue-dark hover:bg-slate-100 focus:bg-slate-100;
+}
+.is-link {
+  @apply text-do-blue-light hover:text-do-blue-medium font-cascadia text-lg font-bold;
 }
 </style>

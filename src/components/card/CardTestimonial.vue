@@ -3,7 +3,7 @@ import BaseCard from '@/components/base/BaseCard.vue'
 </script>
 
 <template>
-  <BaseCard class="h-48 w-88">
+  <BaseCard class="h-48 w-88 shadow-lg">
     <slot />
   </BaseCard>
 </template>

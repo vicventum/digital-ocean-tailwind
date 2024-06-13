@@ -23,6 +23,7 @@ body {
   /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
   /* @apply flex flex-col gap-custom-size; */
   /* 2-2.4 - Usando la clase personalizada que creamos */
+  @apply bg-slate-50
 }
 
 /* 2-3.1 - Creando clase de componente de Tailwind */
