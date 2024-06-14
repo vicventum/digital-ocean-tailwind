@@ -1,11 +1,10 @@
-<script setup lang="ts">
-import BaseButton from '@/components/base/BaseButton.vue'
+<script setup>
+import LinkCta from '@/components/shared/LinkCta.vue'
 import BaseCard from '@/components/base/BaseCard.vue'
-import { Icon } from '@iconify/vue'
 </script>
 
 <template>
-  <section class="py-20">
+  <section>
     <div class="container">
       <div class="grid-rows-auto mb-20 grid grid-cols-5 gap-4">
         <h2 class="col-span-2 text-4xl font-bold text-do-blue-dark">
@@ -17,13 +16,9 @@ import { Icon } from '@iconify/vue'
             Build robust applications using a comprehensive portfolio of compute, storage, database
             and networking products.
           </p>
-          <BaseButton class="group space-x-1" variant="link">
+          <LinkCta href="#">
             <span>Explore our products</span>
-            <Icon
-              icon="carbon:chevron-right"
-              class="inline transition-transform group-hover:translate-x-2 group-hover:transform"
-            />
-          </BaseButton>
+          </LinkCta>
         </div>
 
         <div class="col-span-2 row-start-2">
@@ -31,13 +26,7 @@ import { Icon } from '@iconify/vue'
             Our simple UI, CLI, API, and docs enable you to spend time on your business while we
             focus on the infrastructure.
           </p>
-          <BaseButton class="group space-x-1" variant="link">
-            <span>Read the Docs</span>
-            <Icon
-              icon="carbon:chevron-right"
-              class="inline transition-transform group-hover:translate-x-2 group-hover:transform"
-            />
-          </BaseButton>
+          <LinkCta href="#"> Read the Docs </LinkCta>
         </div>
       </div>
 
@@ -49,7 +38,7 @@ import { Icon } from '@iconify/vue'
         loop
       />
 
-      <div class="grid grid-cols-2 grid-rows-2 items-start gap-8">
+      <div class="grid grid-cols-2 grid-rows-[auto_auto] items-start gap-8">
         <img
           class="row-span-2"
           src="@/assets/img/terminal-image.svg"
@@ -64,8 +53,8 @@ import { Icon } from '@iconify/vue'
           <BaseCard>
             <blockquote class="flex-1 text-sm text-slate-500">
               “We were able to scale our application by almost 250% while keeping costs the same as
-              what we spent at the beginning.” 
-							<span class="block">— Ravi Mittal, CEO, Vuukle</span>
+              what we spent at the beginning.”
+              <span class="block">— Ravi Mittal, CEO, Vuukle</span>
             </blockquote>
           </BaseCard>
 
