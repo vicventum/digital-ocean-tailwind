@@ -4,6 +4,7 @@ import BannerStats from '@/components/banner/BannerStats.vue'
 import BannerTestimonials from '@/components/banner/BannerTestimonials.vue'
 import CloudSection from '@/components/sections/CloudSection.vue'
 import ScaleSection from '@/components/sections/ScaleSection.vue'
+import FeaturesSection from '@/components/sections/FeaturesSection.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import ScaleSection from '@/components/sections/ScaleSection.vue'
     <BannerStats />
     <BannerTestimonials class="mb-20" />
     <CloudSection class="mb-20" />
-    <ScaleSection class="mx-10" />
+    <ScaleSection class="mx-10 mb-20" />
+    <FeaturesSection class="mb-20" />
   </div>
 </template>
