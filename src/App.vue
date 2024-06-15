@@ -2,21 +2,22 @@
 import { RouterView } from 'vue-router'
 import LayoutSubHeader from '@/components/layout/LayoutSubHeader.vue'
 import LayoutHeader from '@/components/layout/LayoutHeader.vue'
+import LayoutPreFooter from '@/components/layout/LayoutPreFooter.vue'
+import BaseDivider from '@/components/base/BaseDivider.vue'
+import LayoutFooter from '@/components/layout/LayoutFooter.vue'
 </script>
 
 <template>
-  <!-- <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header> -->
   <LayoutSubHeader />
   <LayoutHeader />
 
   <RouterView />
+
+  <div class="bg-slate-100">
+    <LayoutPreFooter />
+    <BaseDivider class="container w-5/6" />
+    <LayoutFooter />
+  </div>
 </template>
 
 <style scoped></style>
