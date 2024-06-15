@@ -14,6 +14,7 @@ const props = defineProps({
 
 const variants = {
   default: 'is-default',
+  cta: 'is-cta',
   outlined: 'is-outlined',
   secondary: 'is-secondary',
   link: 'is-link'
@@ -45,6 +46,9 @@ const variantClasses = computed(() => variants[props.variant])
 .is-default {
   @apply bg-do-blue-light text-white hover:bg-do-blue-medium active:bg-do-blue-dark;
 }
+.is-cta {
+  @apply bg-do-blue-light text-xl text-white hover:bg-white hover:text-do-blue-dark active:bg-white transition-all;
+}
 .is-outlined {
   @apply border border-slate-300 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-50;
 }
@@ -52,6 +56,6 @@ const variantClasses = computed(() => variants[props.variant])
   @apply border-slate-300 bg-slate-50 text-do-blue-dark hover:bg-slate-100 focus:bg-slate-100;
 }
 .is-link {
-  @apply text-do-blue-light hover:text-do-blue-medium font-cascadia text-lg font-bold;
+  @apply font-cascadia text-lg font-bold text-do-blue-light hover:text-do-blue-medium;
 }
 </style>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import BaseButton from '@/components/base/BaseButton.vue'
 
 const communityData = [

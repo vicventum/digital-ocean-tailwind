@@ -7,6 +7,7 @@ import ScaleSection from '@/components/sections/ScaleSection.vue'
 import FeaturesSection from '@/components/sections/FeaturesSection.vue'
 import CommunitySection from '@/components/sections/CommunitySection.vue'
 import ArticlesSection from '@/components/sections/ArticlesSection.vue'
+import BannerCta from '@/components/banner/BannerCta.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import ArticlesSection from '@/components/sections/ArticlesSection.vue'
     <ScaleSection class="mx-10 mb-20" />
     <FeaturesSection class="mb-20" />
     <CommunitySection class="mb-20" />
-    <ArticlesSection class="mb-24" />
+    <ArticlesSection class="mb-20" />
+    <BannerCta class="mb-20" />
   </div>
 </template>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import CardArticle from '@/components/card/CardArticle.vue'
 const articles = [
   {
