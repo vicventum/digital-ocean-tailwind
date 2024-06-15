@@ -5,6 +5,7 @@ import BannerTestimonials from '@/components/banner/BannerTestimonials.vue'
 import CloudSection from '@/components/sections/CloudSection.vue'
 import ScaleSection from '@/components/sections/ScaleSection.vue'
 import FeaturesSection from '@/components/sections/FeaturesSection.vue'
+import CommunitySection from '@/components/sections/CommunitySection.vue'
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import FeaturesSection from '@/components/sections/FeaturesSection.vue'
     <CloudSection class="mb-20" />
     <ScaleSection class="mx-10 mb-20" />
     <FeaturesSection class="mb-20" />
+    <CommunitySection class="mb-20" />
   </div>
 </template>
