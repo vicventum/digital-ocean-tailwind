@@ -11,9 +11,7 @@ import { Icon } from '@iconify/vue'
         <Icon icon="carbon:chevron-right" class="inline size-4" />
       </span>
       <ul class="space-x-3">
-        <a href="" class="rounded bg-do-blue-mediumdark px-2 py-1 font-semibold text-sky-400">
-          We're Hiring
-        </a>
+        <a href="" class="rounded bg-do-blue-mediumdark px-2 py-1 font-semibold text-sky-400">We're Hiring</a>
         <a href="" class="hover:text-white">Blog</a>
         <a href="" class="hover:text-white">Docs</a>
         <a href="" class="hover:text-white">Get Support</a>

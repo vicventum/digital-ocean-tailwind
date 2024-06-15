@@ -1,52 +1,13 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
-import BaseButton from '@/components/base/BaseButton.vue'
+import LayoutHeaderSecondary from '@/components/layout/LayoutHeaderSecondary.vue'
+import LayoutHeaderPrincipal from '@/components/layout/LayoutHeaderPrincipal.vue'
 </script>
 
 <template>
-  <header class="shadow">
-    <div class="container flex items-center justify-between py-5">
-      <img src="@/assets/img/digital-ocean-logo.svg" alt="Digital Ocean logo" />
-      <nav>
-        <ul class="flex gap-x-6">
-          <li>
-            <a href="#" class="font-medium">
-              Products
-              <Icon icon="carbon:chevron-down" class="inline size-4" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="font-medium">
-              Solutions
-              <Icon icon="carbon:chevron-down" class="inline size-4" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="font-medium">
-              Marketplace
-              <Icon icon="carbon:chevron-down" class="inline size-4" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="font-medium">
-              Community
-              <Icon icon="carbon:chevron-down" class="inline size-4" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="font-medium">
-              Pricing
-              <Icon icon="carbon:chevron-down" class="inline size-4" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="space-x-2">
-        <BaseButton variant="outlined" href="#">Log in</BaseButton>
-        <BaseButton href="#">Sign up</BaseButton>
-      </div>
-    </div>
-  </header>
+  <section class="fixed z-10 w-full bg-do-blue-lighter">
+    <LayoutHeaderSecondary />
+    <LayoutHeaderPrincipal />
+  </section>
 </template>
 
 <style lang="scss" scoped></style>

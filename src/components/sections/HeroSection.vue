@@ -6,7 +6,8 @@ import HeroForm from '@/components/forms/HeroForm.vue'
   <!-- ? Agrega imagen de fondo -->
   <main class="bg-[url(@/assets/img/hero-bg-animation.svg)] bg-cover bg-center bg-no-repeat">
     <!-- ? Agrega tamaño calculado -->
-    <div class="container grid h-[calc(100vh-112px)] grid-cols-2 items-center gap-8">
+    <!-- <div class="container grid h-[calc(100vh-112px)] grid-cols-2 items-center gap-8"> -->
+    <div class="container grid h-dvh grid-cols-2 items-center gap-8">
       <div class="space-y-4">
         <h1 class="text-balance text-6xl font-bold tracking-tighter text-do-blue-dark">
           The cloud is complex. We make it simple.

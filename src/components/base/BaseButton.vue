@@ -26,7 +26,7 @@ const variantClasses = computed(() => variants[props.variant])
 <template>
   <a
     v-if="href"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-dotted focus:outline-2"
+    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
     :class="variantClasses"
     :href="href"
   >
@@ -35,7 +35,7 @@ const variantClasses = computed(() => variants[props.variant])
   <button
     v-else
     type="button"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold focus:outline-dotted focus:outline-2"
+    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
     :class="variantClasses"
   >
     <slot />
@@ -47,7 +47,7 @@ const variantClasses = computed(() => variants[props.variant])
   @apply bg-do-blue-light text-white hover:bg-do-blue-medium active:bg-do-blue-dark;
 }
 .is-cta {
-  @apply bg-do-blue-light text-xl text-white hover:bg-white hover:text-do-blue-dark active:bg-white transition-all;
+  @apply bg-do-blue-light text-xl text-white transition-all hover:bg-white hover:text-do-blue-dark active:bg-white;
 }
 .is-outlined {
   @apply border border-slate-300 text-do-blue-dark hover:bg-slate-50 focus:bg-slate-50;

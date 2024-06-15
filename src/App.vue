@@ -1,6 +1,5 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import LayoutSubHeader from '@/components/layout/LayoutSubHeader.vue'
 import LayoutHeader from '@/components/layout/LayoutHeader.vue'
 import LayoutPreFooter from '@/components/layout/LayoutPreFooter.vue'
 import BaseDivider from '@/components/base/BaseDivider.vue'
@@ -8,7 +7,6 @@ import LayoutFooter from '@/components/layout/LayoutFooter.vue'
 </script>
 
 <template>
-  <LayoutSubHeader />
   <LayoutHeader />
 
   <RouterView />
