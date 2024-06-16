@@ -6,12 +6,12 @@ import BaseCard from '@/components/base/BaseCard.vue'
 <template>
   <section>
     <div class="container">
-      <div class="grid-rows-auto mb-20 grid grid-cols-5 gap-4">
-        <h2 class="col-span-2 text-4xl font-bold text-do-blue-dark">
+      <div class="grid-rows-auto mb-20 grid gap-y-9 md:grid-cols-5 md:gap-4">
+        <h2 class="text-4xl font-bold text-do-blue-dark md:col-span-2 text-balance">
           Cloud computing with simplicity at its core
         </h2>
 
-        <div class="col-span-2 row-start-2">
+        <div class="md:col-span-2 md:row-start-2">
           <p class="mb-2 text-lg font-medium text-gray-500">
             Build robust applications using a comprehensive portfolio of compute, storage, database
             and networking products.
@@ -21,7 +21,7 @@ import BaseCard from '@/components/base/BaseCard.vue'
           </LinkCta>
         </div>
 
-        <div class="col-span-2 row-start-2">
+        <div class="md:col-span-2 md:row-start-2">
           <p class="mb-2 text-lg font-medium text-gray-500">
             Our simple UI, CLI, API, and docs enable you to spend time on your business while we
             focus on the infrastructure.
@@ -38,7 +38,7 @@ import BaseCard from '@/components/base/BaseCard.vue'
         loop
       />
 
-      <div class="grid grid-cols-2 grid-rows-[auto_auto] items-start gap-8">
+      <div class="grid md:grid-cols-2 md:grid-rows-[auto_auto] items-start gap-y-7 md:gap-8">
         <img
           class="row-span-2"
           src="@/assets/img/terminal-image.svg"
@@ -58,8 +58,8 @@ import BaseCard from '@/components/base/BaseCard.vue'
             </blockquote>
           </BaseCard>
 
-          <BaseCard>
-            <img src="@/assets/img/vuukle-logo.svg" alt="Vuukle logo" />
+          <BaseCard padding="p-3 md:p-5">
+            <img class="w-28 md:w-auto" src="@/assets/img/vuukle-logo.svg" alt="Vuukle logo" />
           </BaseCard>
         </div>
       </div>

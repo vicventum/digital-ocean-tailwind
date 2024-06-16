@@ -8,7 +8,7 @@ import HeroForm from '@/components/forms/HeroForm.vue'
     <!-- ? Agrega tamaño calculado -->
     <!-- <div class="container grid h-[calc(100vh-112px)] grid-cols-2 items-center gap-8"> -->
     <div
-      class="container grid grid-cols-1 items-center gap-8 py-32 pb-20 md:h-dvh md:grid-cols-2 md:py-0"
+      class="container grid grid-cols-1 items-center gap-8 pt-32 pb-14 md:h-dvh md:grid-cols-2 md:py-0"
     >
       <div class="space-y-4">
         <h1 class="text-balance text-4xl font-bold tracking-tighter text-do-blue-dark md:text-6xl">
