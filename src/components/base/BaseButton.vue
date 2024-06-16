@@ -26,7 +26,7 @@ const variantClasses = computed(() => variants[props.variant])
 <template>
   <a
     v-if="href"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
+    class="mb-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
     :class="variantClasses"
     :href="href"
   >
@@ -35,7 +35,7 @@ const variantClasses = computed(() => variants[props.variant])
   <button
     v-else
     type="button"
-    class="mb-2 me-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
+    class="mb-2 rounded-lg px-6 py-2.5 text-sm font-semibold transition focus:outline-dotted focus:outline-2"
     :class="variantClasses"
   >
     <slot />
