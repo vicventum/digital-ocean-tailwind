@@ -24,7 +24,7 @@ const communityData = [
 <template>
   <section class="">
     <div class="container space-y-16">
-      <div class="mx-auto w-1/2 space-y-6 text-center">
+      <div class="mx-auto space-y-6 text-center md:w-1/2">
         <h2 class="text-4xl font-bold">
           Build alongside a robust and supportive community like you
         </h2>
@@ -37,9 +37,13 @@ const communityData = [
         <BaseButton>Explore the community</BaseButton>
       </div>
 
-      <div class="flex gap-6 w-9/12 mx-auto">
-        <article class="space-y-1" v-for="{ value, text } in communityData" :key="text">
-          <h3 class="text-center text-4xl font-bold text-do-blue-light lg:text-left">
+      <div class="mx-auto grid w-9/12 flex-col gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article
+          class="space-y-1 text-pretty text-center lg:text-left"
+          v-for="{ value, text } in communityData"
+          :key="text"
+        >
+          <h3 class="text-4xl font-bold text-do-blue-light">
             {{ value }}
           </h3>
           <p class="text-lg font-medium text-slate-500">
