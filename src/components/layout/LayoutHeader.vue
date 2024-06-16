@@ -20,7 +20,7 @@ function handleLeave() {
 
 <template>
   <section class="fixed z-10 w-full bg-do-blue-lighter">
-    <LayoutHeaderSecondary />
+    <LayoutHeaderSecondary class="hidden md:block" />
     <LayoutHeaderPrincipal @link-enter="handleEnter" @link-leave="handleLeave" />
     <MenuProducts
       v-show="isOpenMenuLink"

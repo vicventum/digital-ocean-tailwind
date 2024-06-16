@@ -41,10 +41,11 @@ const links = [
 </script>
 
 <template>
-  <header class="shadow">
+  <header class="shadow py-5 lg:py-0">
     <div class="container flex items-center justify-between">
       <img src="@/assets/img/digital-ocean-logo.svg" alt="Digital Ocean logo" />
-      <nav>
+
+			<nav class="hidden lg:block">
         <ul class="flex gap-x-6">
           <li v-for="link in links" :key="link.title" class="py-5" @mouseleave="handleLeave">
             <a :href="link.href" class="font-medium" @mouseenter="handleEnter(link.subLinks)">
@@ -54,10 +55,13 @@ const links = [
           </li>
         </ul>
       </nav>
-      <div class="space-x-2">
+
+      <div class="hidden space-x-2 lg:block">
         <BaseButton variant="outlined" href="#">Log in</BaseButton>
         <BaseButton href="#">Sign up</BaseButton>
       </div>
+
+			<Icon icon="radix-icons:hamburger-menu" class="size-8 lg:hidden" />
     </div>
   </header>
 </template>
