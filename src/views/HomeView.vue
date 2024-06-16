@@ -16,7 +16,7 @@ import BannerCta from '@/components/banner/BannerCta.vue'
     <BannerStats />
     <BannerTestimonials class="mb-20" />
     <CloudSection class="mb-20" />
-    <ScaleSection class="mx-10 mb-20" />
+    <ScaleSection class="mb-20 md:mx-10" />
     <FeaturesSection class="mb-20" />
     <CommunitySection class="mb-20" />
     <ArticlesSection class="mb-20" />
