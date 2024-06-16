@@ -82,7 +82,9 @@ const linksSection = [
 
 <template>
   <div class="bg-slate-100">
-    <nav class="container grid w-5/6 grid-cols-5 gap-x-2 gap-y-8 py-16">
+    <nav
+      class="container grid grid-cols-2 gap-4 gap-y-8 py-16 md:grid-cols-3 lg:w-5/6 lg:grid-cols-5"
+    >
       <div class="space-y-5" v-for="section in linksSection" :key="section.title">
         <h2 class="text-xl font-medium">{{ section.title }}</h2>
         <ul class="space-y-2">
