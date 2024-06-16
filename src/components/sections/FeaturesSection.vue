@@ -64,9 +64,10 @@ const serviceData = [
 
 <template>
   <section class="mt-20 bg-slate-100 py-20">
-    <div class="container grid md:grid-cols-[1fr_36%_1fr] gap-y-8 items-center text-pretty">
-
-      <article class="space-y-4 md:pr-9 text-center md:text-left">
+    <div
+      class="container grid items-center gap-y-8 text-pretty lg:grid-cols-[1fr_36%_1fr]"
+    >
+      <article class="space-y-4 text-center md:pr-9 md:text-left">
         <h2 class="text-4xl font-bold text-do-blue-dark">See what you can save</h2>
         <p class="text-xl font-medium tracking-tight text-slate-500">
           DigitalOcean consistently outperforms other cloud providers on price, while delivering the

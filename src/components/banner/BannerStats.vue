@@ -25,7 +25,7 @@ const items = [
 
 <template>
   <section class="py-16">
-    <div class="container flex flex-col gap-y-12 md:flex-row justify-between">
+    <div class="container grid justify-between gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
       <article v-for="item of items" :key="item.title" class="flex items-center gap-x-2">
         <img :src="utilSrc(item.img)" :alt="item.alt" />
         <div>

@@ -23,9 +23,9 @@ const statsData = [
 </script>
 
 <template>
-  <section class="">
+  <section class="2xl:container">
     <div class="rounded-lg bg-slate-200 px-8 pb-20 pt-14 md:px-16">
-      <div class="mb-16 items-center md:mb-12 md:grid md:grid-cols-2">
+      <div class="mb-16 items-center gap-4 md:mb-12 lg:grid lg:grid-cols-2">
         <div class="space-y-5">
           <h2 class="text-4xl font-bold">Scale up with confidence</h2>
           <p class="text-lg font-medium text-slate-600">
@@ -37,10 +37,12 @@ const statsData = [
           </p>
           <LinkCta href="#" class="mt-2 inline-block">View pricing</LinkCta>
         </div>
-        <img class="" src="@/assets/img/chart-up-cutted.svg" alt="Chart up" />
+
+        <!-- ? Aplicando clase sólo a un rango de breakpoints -->
+        <img class="sm:max-lg:hidden" src="@/assets/img/chart-up-cutted.svg" alt="Chart up" />
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         <div v-for="data in statsData" :key="data.number">
           <h3 class="text-4xl font-bold">{{ data.number }}</h3>
           <p class="mt-3 text-xl text-slate-600">{{ data.text }}</p>

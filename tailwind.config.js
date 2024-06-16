@@ -6,7 +6,12 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1.5rem'
+      // padding: '1.5rem'
+      padding: {
+        DEFAULT: '1.5rem',
+        // ? Agregando padding personalizado para pantallas muy grandes
+        '2xl': '6rem'
+      }
     },
     extend: {
       // 2-2.3 - Agregando una clase de espaciado personalizada
@@ -31,7 +36,7 @@ module.exports = {
       },
       // ? Agregando clase nueva para tamaño personalizado
       width: {
-        '88': '22rem'
+        88: '22rem'
       }
     }
   },

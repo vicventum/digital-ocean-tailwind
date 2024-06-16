@@ -61,7 +61,7 @@ const articles = [
 </script>
 
 <template>
-  <section class="container grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <section class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
     <CardArticle
       v-for="article in articles"
       :key="article.title"
