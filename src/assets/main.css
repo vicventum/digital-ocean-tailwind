@@ -12,18 +12,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 2-2.1 - Agregando estilos globales */
-body {
-  /* margin: 2.5rem;
+@layer base {
+  /* ? Agregando estilos bases a los inputs con Tailwind Form */
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    /* @apply w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500; */
+    /* @apply rounded-lg border border-slate-200 px-4 py-3 shadow-sm focus:border-slate-300 focus:shadow-input-focus; */
+    @apply rounded-lg border border-slate-200 px-4 py-3 shadow-sm focus:border-slate-300 focus:ring-0;
+  }
+  [type='checkbox'],
+  [type='radio'] {
+    @apply rounded-lg border-slate-200 text-slate-300 focus:ring-slate-300;
+  }
+
+  /* 2-2.1 - Agregando estilos globales */
+  body {
+    /* margin: 2.5rem;
 	display: flex;
 	gap: 1.6rem;
 	flex-direction: column;
 	background-color: #ececec; */
 
-  /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
-  /* @apply flex flex-col gap-custom-size; */
-  /* 2-2.4 - Usando la clase personalizada que creamos */
-  @apply bg-slate-50
+    /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
+    /* @apply flex flex-col gap-custom-size; */
+    /* 2-2.4 - Usando la clase personalizada que creamos */
+    @apply bg-slate-50;
+  }
 }
 
 /* 2-3.1 - Creando clase de componente de Tailwind */

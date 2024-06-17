@@ -8,17 +8,17 @@ import BaseButton from '@/components/base/BaseButton.vue'
     <div class="flex flex-col gap-4">
       <!-- ? Agrega clases de sombra personalizadas -->
       <input
-        class="border-slate-250 rounded-lg border px-4 py-3 shadow-input outline-none transition hover:shadow-input-focus focus:border-slate-300 focus:shadow-input-focus"
+        class="shadow-input transition hover:shadow-input-focus"
         type="text"
         placeholder="First name"
       />
       <input
-        class="border-slate-250 rounded-lg border px-4 py-3 shadow-input outline-none transition hover:shadow-input-focus focus:border-slate-300 focus:shadow-input-focus"
+        class="shadow-input transition hover:shadow-input-focus"
         type="email"
         placeholder="Email"
       />
       <input
-        class="border-slate-250 rounded-lg border px-4 py-3 shadow-input outline-none transition hover:shadow-input-focus focus:border-slate-300 focus:shadow-input-focus"
+        class="shadow-input transition hover:shadow-input-focus"
         type="password"
         placeholder="Password"
       />
