@@ -20,5 +20,27 @@ const iconName = computed(() =>
     <Icon :icon="iconName" class="size-8 cursor-pointer lg:hidden" @click="handleMenu" />
   </LayoutHeaderPrincipalContainer>
 
-  <LayoutHeaderPrincipalMobileMenu v-if="isOpenMenu" />
+  <!-- <Transition
+	name="fade"
+  > -->
+  <Transition
+    enter-from-class="opacity-0"
+    leave-to-class="opacity-0"
+    enter-active-class="transition duration-150"
+    leave-active-class="transition duration-150"
+  >
+    <LayoutHeaderPrincipalMobileMenu v-show="isOpenMenu" />
+  </Transition>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
