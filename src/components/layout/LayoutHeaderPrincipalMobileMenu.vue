@@ -6,7 +6,7 @@ function handleLeave() {}
 </script>
 
 <template>
-  <section class="container space-y-5 bg-white pb-8 pt-4 shadow">
+  <section class="container space-y-5 bg-white- pb-8 pt-4 shadow">
     <!-- LINKS -->
     <nav class="">
       <ul class="flex flex-col divide-y">

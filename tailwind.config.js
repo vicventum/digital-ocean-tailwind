@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
 module.exports = {
-  // 1-5.4 - Especificando los archivos que usarán las clases de Tailwind
+  // ? Especificando los archivos que usarán las clases de Tailwind
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     container: {
@@ -14,7 +14,7 @@ module.exports = {
       }
     },
     extend: {
-      // 2-2.3 - Agregando una clase de espaciado personalizada
+      // ? Agregando una clase de espaciado personalizada
       spacing: {
         'custom-size': '1.6rem'
       },
@@ -37,6 +37,10 @@ module.exports = {
       // ? Agregando clase nueva para tamaño personalizado
       width: {
         88: '22rem'
+      },
+      // ? Agregar timing function de transiciones personalizada
+      transitionTimingFunction: {
+        'elastic': 'cubic-bezier(.3,1.03,.82,-0.29)'
       }
     }
   },
