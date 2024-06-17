@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
-module.exports = {
+import tailwindForm from '@tailwindcss/forms'
+
+export default {
   // 1-5.4 - Especificando los archivos que usarán las clases de Tailwind
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -40,5 +42,5 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [tailwindForm]
 }
