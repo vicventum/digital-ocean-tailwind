@@ -17,6 +17,10 @@ defineProps({
   reverse: {
     type: Boolean,
     default: false
+  },
+  stopOnHover: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
@@ -24,7 +28,7 @@ defineProps({
 <template>
   <section
     class="animation relative flex h-full overflow-hidden"
-    :class="[gap, { 'animation--reverse': reverse }]"
+    :class="[gap, { 'animation--reverse': reverse }, { 'animation--stop': stopOnHover }]"
     :style="{ alignItems: align }"
   >
     <div
@@ -62,7 +66,7 @@ defineProps({
 .animation--reverse .animation__child {
   animation: carousel-animation linear infinite reverse;
 }
-.animation:hover .animation__child {
+.animation--stop:hover .animation__child {
   animation-play-state: paused;
 }
 </style>
