@@ -38,8 +38,8 @@ function handleLeave() {
     </div>
   </LayoutHeaderPrincipalContainer>
 
+  <!-- v-show="isOpenMenuLink" -->
   <MenuProducts
-    v-show="isOpenMenuLink"
     @mouseenter="isOpenMenuLink = true"
     @mouseleave="handleLeave"
   />
