@@ -4,7 +4,7 @@ import BaseButton from '@/components/base/BaseButton.vue'
 
 <template>
   <section
-    class="container flex flex-col items-center justify-between gap-8 rounded-lg bg-do-blue-dark bg-[url(@/assets/img/new-cta-band-bg-image.jpg)] bg-cover bg-scroll bg-center px-8 py-12 text-white lg:flex-row lg:px-16 lg:py-24"
+    class="container flex flex-col items-center justify-between gap-8 lg:rounded-lg bg-do-blue-dark bg-[url(@/assets/img/new-cta-band-bg-image.jpg)] bg-cover bg-scroll bg-center px-8 py-12 text-white lg:flex-row lg:px-16 lg:py-24"
   >
     <div class="lg:w-1/2 space-y-4 text-center lg:text-left">
       <h2 class="text-4xl font-bold">Start building today</h2>

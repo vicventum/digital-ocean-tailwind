@@ -6,7 +6,6 @@ import CloudSection from '@/components/sections/CloudSection.vue'
 import ScaleSection from '@/components/sections/ScaleSection.vue'
 import FeaturesSection from '@/components/sections/FeaturesSection.vue'
 import CommunitySection from '@/components/sections/CommunitySection.vue'
-import ArticlesSection from '@/components/sections/ArticlesSection.vue'
 import BannerCta from '@/components/banner/BannerCta.vue'
 </script>
 
@@ -19,7 +18,6 @@ import BannerCta from '@/components/banner/BannerCta.vue'
     <ScaleSection class="mb-20 md:mx-10 2xl:mx-auto" />
     <FeaturesSection class="mb-20" />
     <CommunitySection class="mb-20" />
-    <ArticlesSection class="mb-20" />
     <BannerCta class="mb-20" />
   </div>
 </template>

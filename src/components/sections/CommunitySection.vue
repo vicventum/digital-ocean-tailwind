@@ -1,5 +1,6 @@
 <script setup>
 import BaseButton from '@/components/base/BaseButton.vue'
+import ArticlesGallery from '@/components/gallery/ArticlesGallery.vue'
 
 const communityData = [
   {
@@ -23,7 +24,7 @@ const communityData = [
 
 <template>
   <section class="">
-    <div class="container space-y-16">
+    <div class="container mb-20 space-y-16">
       <div class="mx-auto space-y-6 text-center md:w-1/2">
         <h2 class="text-4xl font-bold">
           Build alongside a robust and supportive community like you
@@ -52,5 +53,7 @@ const communityData = [
         </article>
       </div>
     </div>
+
+    <ArticlesGallery />
   </section>
 </template>
