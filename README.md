@@ -1,6 +1,6 @@
-# .
+# Tailwind Digital Ocean
 
-This template should help get you started developing with Vue 3 in Vite.
+Clon de la landing de Digital Ocean para practicar el uso de Tailwind CSS con Vue
 
 ## Recommended IDE Setup
 
