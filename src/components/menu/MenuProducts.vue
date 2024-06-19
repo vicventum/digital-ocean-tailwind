@@ -171,48 +171,69 @@ const regularSection = [
     }
   ]
 ]
-// const featureSection = sectionLinks.find((section) => section.featured)
+
+const emit = defineEmits(['close'])
+
+function handleClose() {
+  emit('close')
+}
 </script>
 
 <template>
-  <nav class="relative z-10 shadow">
-    <div class="grid grid-cols-[40%_1fr] items-start">
-      <article class="flex flex-col bg-sky-50 p-8 pl-24">
-        <h3 class="px-4 font-bold uppercase">{{ featuredSection.title }}</h3>
-
-        <a
-          v-for="link in featuredSection.links"
-          :key="link.name"
-          :href="link.href"
-          class="group rounded px-4 py-5 transition hover:bg-sky-200"
+  <nav class="relative- z-10- bg-do-blue-lighter shadow">
+    <div class="md:max-lg:container">
+      <button
+        class="flex-start text-medium container flex w-full items-center justify-start gap-x-2 px-6 py-2 lg:hidden"
+        @click="handleClose"
+      >
+        <Icon
+          icon="carbon:arrow-left"
+          class="inline size-4 transition-transform group-hover:translate-x-1"
+        />
+        <span>Products</span>
+      </button>
+      <div class="lg:grid lg:grid-cols-[40%_1fr] lg:items-start">
+        <article class="bg-sky-50 px-6 py-4 md:p-8 lg:pl-24">
+          <h3 class="pb-2 font-bold uppercase md:px-4 lg:pb-0">{{ featuredSection.title }}</h3>
+          <div class="grid gap-y-2 md:max-lg:grid-cols-2 lg:gap-0">
+            <a
+              v-for="link in featuredSection.links"
+              :key="link.name"
+              :href="link.href"
+              class="group space-y-2 rounded transition hover:bg-sky-200 md:px-4 md:py-5"
+            >
+              <h4 class="font-medium transition group-hover:text-do-blue-light md:text-xl">
+                {{ link.name }}
+              </h4>
+              <span class="hidden text-slate-600 md:block">{{ link.desc }}</span>
+            </a>
+          </div>
+        </article>
+        <div
+          class="align-start grid grid-cols-1 gap-x-4 gap-y-8 px-6 py-4 md:grid-cols-3 md:p-8 lg:pr-24"
         >
-          <h4 class="pb-2 text-xl font-medium transition group-hover:text-do-blue-light">
-            {{ link.name }}
-          </h4>
-          <span class="text-slate-600">{{ link.desc }}</span>
-        </a>
-      </article>
-
-      <div class="align-start bg-do-blue-lighter- grid grid-cols-3 gap-x-4 p-8 pr-24">
-        <div v-for="(section, index) in regularSection" :key="index" class="space-y-8">
-          <article v-for="block in section" :key="block.title" class="space-y-4">
-            <h3 class="font-bold uppercase">{{ block.title }}</h3>
-            <ul class="space-y-2">
-              <li v-for="link in block.links" :key="link.name" class="block text-slate-600">
-                <a :href="link.href" class="hover:text-slate-900">{{ link.name }}</a>
-              </li>
-            </ul>
-          </article>
+          <div v-for="(section, index) in regularSection" :key="index" class="space-y-8">
+            <article v-for="block in section" :key="block.title" class="space-y-4">
+              <h3 class="font-bold uppercase">{{ block.title }}</h3>
+              <ul class="space-y-2">
+                <li v-for="link in block.links" :key="link.name" class="block text-slate-600">
+                  <a :href="link.href" class="hover:text-slate-900">{{ link.name }}</a>
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
+      <a
+        href="#"
+        class="group flex items-center justify-center space-x-2 border-t border-slate-300 py-2 text-do-blue-light transition hover:text-do-blue-medium"
+      >
+        <span>See all products</span>
+        <Icon
+          icon="carbon:arrow-right"
+          class="size-4 transition-transform group-hover:translate-x-1"
+        />
+      </a>
     </div>
-
-    <a
-      href="#"
-      class="group flex items-center justify-center space-x-2 border-t border-slate-300 py-2 text-do-blue-light hover:text-do-blue-medium transition"
-    >
-      <span>See all products</span>
-      <Icon icon="carbon:arrow-right" class="size-4 transition-transform group-hover:translate-x-1" />
-    </a>
   </nav>
 </template>

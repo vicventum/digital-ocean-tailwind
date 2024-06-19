@@ -1,27 +1,22 @@
 export const headerLinks = [
   {
     title: 'Products',
-    href: '#',
-    subLinks: [{}]
+    menu: 'MenuProducts'
   },
   {
     title: 'Solutions',
     href: '#',
-    subLinks: [{}]
   },
   {
     title: 'Marketplace',
     href: '#',
-    subLinks: []
   },
   {
     title: 'Community',
     href: '#',
-    subLinks: [{}]
   },
   {
     title: 'Pricing',
     href: '#',
-    subLinks: []
   }
 ]

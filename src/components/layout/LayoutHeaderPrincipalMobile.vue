@@ -29,7 +29,7 @@ const iconName = computed(() =>
     enter-active-class="transition duration-150"
     leave-active-class="transition duration-150"
   >
-    <LayoutHeaderPrincipalMobileMenu v-show="isOpenMenu" />
+    <LayoutHeaderPrincipalMobileMenu v-show="isOpenMenu" :is-open-menu="isOpenMenu" />
   </Transition>
 </template>
 
