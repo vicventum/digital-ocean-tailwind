@@ -42,7 +42,24 @@ export default {
       },
       // ? Agregar timing function de transiciones personalizada
       transitionTimingFunction: {
-        'elastic': 'cubic-bezier(.3,1.03,.82,-0.29)'
+        elastic: 'cubic-bezier(.3,1.03,.82,-0.29)'
+      },
+      // ? Agregando nueva animación
+      animation: {
+        fade: 'fade .15s cubic-bezier(0.4, 0, 0.2, 1);',
+        'fade-reverse': 'fade .15s cubic-bezier(0.4, 0, 0.2, 1) reverse;',
+        'move-left-linear': 'move-x linear infinite',
+        'move-right-linear': 'move-x linear infinite reverse'
+      },
+      keyframes: {
+        fade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 }
+        },
+        'move-x': {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' }
+        }
       }
     }
   },

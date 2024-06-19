@@ -34,7 +34,6 @@ function handleClose() {
 <template>
   <section class="bg-white- relative space-y-5 pb-8 pt-4 shadow">
     <!-- LINKS -->
-    <!-- <template> -->
     <div class="container">
       <nav class="">
         <ul class="flex flex-col divide-y">
@@ -66,15 +65,9 @@ function handleClose() {
         </div>
       </div>
     </div>
-    <!-- </template> -->
 
     <Teleport to="#app">
-      <Transition
-        enter-from-class="opacity-0"
-        leave-to-class="opacity-0"
-        enter-active-class="transition duration-150"
-        leave-active-class="transition duration-150"
-      >
+      <Transition enter-active-class="animate-fade" leave-active-class="animate-fade-reverse">
         <Component
           :is="menus[activeMenu]"
           class="fixed bottom-0 top-[73px] z-20 w-full overflow-y-auto overflow-x-hidden md:top-[113px]"
