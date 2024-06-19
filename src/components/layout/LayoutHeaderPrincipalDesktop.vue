@@ -20,7 +20,7 @@ function handleLeave() {
 </script>
 
 <template>
-  <LayoutHeaderPrincipalContainer v-bind="$attrs">
+  <LayoutHeaderPrincipalContainer class="relative z-20" v-bind="$attrs">
     <nav class="hidden lg:block">
       <ul class="flex gap-x-6">
         <li v-for="link in headerLinks" :key="link.title" class="py-5" @mouseleave="handleLeave">
@@ -38,8 +38,8 @@ function handleLeave() {
     </div>
   </LayoutHeaderPrincipalContainer>
 
-  <!-- v-show="isOpenMenuLink" -->
   <MenuProducts
+    v-show="isOpenMenuLink"
     @mouseenter="isOpenMenuLink = true"
     @mouseleave="handleLeave"
   />

@@ -4,7 +4,7 @@ import LayoutHeaderPrincipal from '@/components/layout/LayoutHeaderPrincipal.vue
 </script>
 
 <template>
-  <section class="fixed z-10 w-full bg-do-blue-lighter">
+  <section class="fixed z-20 w-full bg-do-blue-lighter">
     <LayoutHeaderSecondary class="hidden md:block" />
     <LayoutHeaderPrincipal />
   </section>
