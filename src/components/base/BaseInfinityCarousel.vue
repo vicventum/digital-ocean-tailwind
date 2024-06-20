@@ -12,7 +12,7 @@ defineProps({
   },
   time: {
     type: String,
-    default: '40'
+    default: '70'
   },
   reverse: {
     type: Boolean,
@@ -38,7 +38,7 @@ defineProps({
     <div
       v-for="n in 2"
       :key="n"
-      class="animate-move-left-linear flex items-center"
+      class="flex animate-move-left-linear items-center"
       :class="[
         gap,
         { 'animate-move-right-linear': reverse },

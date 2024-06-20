@@ -15,7 +15,7 @@ defineProps({
 <template>
   <CardTestimonial class="flex flex-col justify-between">
     <header class="flex gap-x-4">
-      <img class="w-20" :src="utilSrc(logo)" :alt="alt" />
+      <img class="max-h-5 nax-w-20" :src="utilSrc(logo)" :alt="alt" />
       <BaseDivider vertical />
       <span class="text-slate-600">{{ type }}</span>
     </header>

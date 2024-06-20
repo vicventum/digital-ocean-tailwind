@@ -60,7 +60,7 @@ import BaseCard from '@/components/base/BaseCard.vue'
           </BaseCard>
 
           <BaseCard padding="p-3 md:p-5">
-            <img class="w-28 md:w-auto" src="@/assets/img/vuukle-logo.svg" alt="Vuukle logo" />
+            <img class="w-28 md:w-12" src="@/assets/img/vuukle-logo.svg" alt="Vuukle logo" />
           </BaseCard>
         </div>
       </div>

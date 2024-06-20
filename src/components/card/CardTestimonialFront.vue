@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <CardTestimonial class="flex place-content-center">
-    <img class="w-52" :src="utilSrc(logo)" :alt="alt" />
+  <CardTestimonial class="flex place-content-center place-items-center">
+    <img class="w-52 h-auto" :src="utilSrc(logo)" :alt="alt" />
   </CardTestimonial>
 </template>
