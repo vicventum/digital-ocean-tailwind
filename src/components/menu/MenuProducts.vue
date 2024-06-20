@@ -183,7 +183,7 @@ function handleClose() {
   <nav class="relative- z-10- bg-do-blue-lighter shadow">
     <div class="md:max-lg:container">
       <button
-        class="flex-start text-medium container flex w-full items-center justify-start gap-x-2 px-6 py-2 lg:hidden"
+        class="flex-start text-medium container flex w-full items-center justify-start gap-x-2 px-6 py-4 lg:hidden"
         @click="handleClose"
       >
         <Icon

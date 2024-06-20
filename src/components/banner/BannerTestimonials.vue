@@ -80,12 +80,12 @@ const testimonialsData = [
     alt: 'HackTheBox logo'
   },
   {
-    logo: 'bunnyshell-logo.svg',
+    logo: 'vuukle-large-logo.svg',
     alt: 'BunnyShell logo'
   },
   {
     logo: 'intricately-large-logo.svg',
-    alt: 'Intricately logo'
+    alt: 'Vuukle logo'
   }
 ]
 </script>
