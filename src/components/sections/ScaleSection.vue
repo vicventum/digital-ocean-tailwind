@@ -1,6 +1,7 @@
 <script setup>
 import BaseCard from '@/components/base/BaseCard.vue'
 import LinkCta from '@/components/shared/LinkCta.vue'
+import CardItem from '@/components/card/CardItem.vue'
 
 const statsData = [
   {
@@ -43,10 +44,13 @@ const statsData = [
       </div>
 
       <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-        <div v-for="data in statsData" :key="data.number">
-          <h3 class="text-4xl font-bold">{{ data.number }}</h3>
-          <p class="mt-3 text-xl text-slate-600">{{ data.text }}</p>
-        </div>
+        <CardItem
+          v-for="data of statsData"
+          :key="data.number"
+          :title="data.number"
+          :text="data.text"
+          class-text="text-lg"
+        />
       </div>
     </div>
 

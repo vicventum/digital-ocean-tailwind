@@ -1,5 +1,6 @@
 <script setup>
 import { utilSrc } from '@/utils/util-src'
+import CardItem from '@/components/card/CardItem.vue'
 
 const items = [
   {
@@ -26,13 +27,14 @@ const items = [
 <template>
   <section class="py-16">
     <div class="container grid justify-between gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
-      <article v-for="item of items" :key="item.title" class="flex items-center gap-x-2">
-        <img :src="utilSrc(item.img)" :alt="item.alt" />
-        <div>
-          <h2 class="text-4xl font-bold">{{ item.title }}</h2>
-          <span class="text-gray-500">{{ item.text }}</span>
-        </div>
-      </article>
+      <CardItem
+        v-for="item of items"
+        :key="item.title"
+        :img="item.img"
+        :alt="item.alt"
+        :title="item.title"
+        :text="item.text"
+      />
     </div>
   </section>
 </template>

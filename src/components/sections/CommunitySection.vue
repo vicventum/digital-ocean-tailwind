@@ -1,6 +1,7 @@
 <script setup>
 import BaseButton from '@/components/base/BaseButton.vue'
 import ArticlesGallery from '@/components/gallery/ArticlesGallery.vue'
+import CardItem from '@/components/card/CardItem.vue'
 
 const communityData = [
   {
@@ -39,18 +40,15 @@ const communityData = [
       </div>
 
       <div class="mx-auto grid w-9/12 flex-col gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <article
-          class="space-y-1 text-pretty text-center lg:text-left"
-          v-for="{ value, text } in communityData"
-          :key="text"
-        >
-          <h3 class="text-4xl font-bold text-do-blue-light">
-            {{ value }}
-          </h3>
-          <p class="text-lg font-medium text-slate-500">
-            {{ text }}
-          </p>
-        </article>
+        <CardItem
+          v-for="data of communityData"
+          :key="data.value"
+          :title="data.value"
+          :text="data.text"
+          class="text-center lg:text-left"
+          class-title="text-do-blue-light"
+          class-text="text-lg font-medium"
+        />
       </div>
     </div>
 

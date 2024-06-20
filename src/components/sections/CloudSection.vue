@@ -36,6 +36,7 @@ import BaseCard from '@/components/base/BaseCard.vue'
         alt="Video about the dashboard of Digital Ocean"
         autoplay
         loop
+        muted
       />
 
       <div class="grid md:grid-cols-2 md:grid-rows-[auto_auto] items-start gap-y-7 md:gap-8">
