@@ -40,16 +40,25 @@ const statsData = [
         </div>
 
         <!-- ? Aplicando clase sólo a un rango de breakpoints -->
-        <img class="sm:max-lg:hidden" src="@/assets/img/chart-up-cutted.svg" alt="Chart up" />
+        <img
+          class="sm:max-lg:hidden"
+          src="@/assets/img/chart-up-cutted.svg"
+          alt="Chart up"
+          data-sal="fade"
+          data-sal-duration="1000"
+        />
       </div>
 
       <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         <CardItem
-          v-for="data of statsData"
+          v-for="(data, index) of statsData"
           :key="data.number"
           :title="data.number"
           :text="data.text"
           class-text="text-lg"
+          :data-sal-delay="+`${index}00` / 2"
+          data-sal="fade"
+          data-sal-duration="1000"
         />
       </div>
     </div>

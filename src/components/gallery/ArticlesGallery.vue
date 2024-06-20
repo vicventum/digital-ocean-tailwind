@@ -63,13 +63,16 @@ const articles = [
 <template>
   <section class="container grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
     <CardArticle
-      v-for="article in articles"
+      v-for="(article, index) in articles"
       :key="article.title"
       :image="article.image"
       :type="article.type"
       :title="article.title"
       :date="article.date"
       :views="article.views"
+      :data-sal-delay="+`${index}00` / 2"
+        data-sal="slide-left"
+        data-sal-duration="1000"
     />
   </section>
 </template>

@@ -41,13 +41,16 @@ const communityData = [
 
       <div class="mx-auto grid w-9/12 flex-col gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <CardItem
-          v-for="data of communityData"
+          v-for="(data, index) of communityData"
           :key="data.value"
           :title="data.value"
           :text="data.text"
           class="text-center lg:text-left"
           class-title="text-do-blue-light"
           class-text="text-lg font-medium"
+          :data-sal-delay="+`${index}00` / 1"
+          data-sal="fade"
+          data-sal-duration="1000"
         />
       </div>
     </div>

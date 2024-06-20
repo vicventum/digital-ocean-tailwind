@@ -8,13 +8,22 @@ import HeroForm from '@/components/forms/HeroForm.vue'
     <!-- ? Agrega tamaño calculado -->
     <!-- <div class="container grid h-[calc(100vh-112px)] grid-cols-2 items-center gap-8"> -->
     <div
-      class="container grid grid-cols-1 items-center gap-8 pt-32 pb-14 md:h-dvh md:grid-cols-2 md:py-0"
+      class="container grid grid-cols-1 items-center gap-8 pb-14 pt-32 md:h-dvh md:grid-cols-2 md:py-0"
     >
       <div class="space-y-4">
-        <h1 class="text-balance text-4xl font-bold tracking-tighter text-do-blue-dark md:text-6xl">
+        <h1
+          class="text-balance text-4xl font-bold tracking-tighter text-do-blue-dark md:text-6xl"
+          data-sal="slide-right"
+          data-sal-duration="1000"
+        >
           The cloud is complex. We make it simple.
         </h1>
-        <p class="text-pretty text-xl font-medium tracking-tighter text-slate-500 md:text-2xl">
+        <p
+          class="text-pretty text-xl font-medium tracking-tighter text-slate-500 md:text-2xl"
+          data-sal-delay="100"
+          data-sal="slide-right"
+          data-sal-duration="1000"
+        >
           The cloud computing services you need, with the predictable pricing, developer-friendly
           features, and scalability you’ll love.
         </p>

@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "sal.js": "0.8.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

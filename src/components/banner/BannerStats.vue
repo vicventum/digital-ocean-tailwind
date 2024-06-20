@@ -1,5 +1,4 @@
 <script setup>
-import { utilSrc } from '@/utils/util-src'
 import CardItem from '@/components/card/CardItem.vue'
 
 const items = [
@@ -28,12 +27,15 @@ const items = [
   <section class="py-16">
     <div class="container grid justify-between gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
       <CardItem
-        v-for="item of items"
+        v-for="(item, index) of items"
         :key="item.title"
         :img="item.img"
         :alt="item.alt"
         :title="item.title"
         :text="item.text"
+        :data-sal-delay="+`${index}00` / 2"
+        data-sal="fade"
+        data-sal-duration="1000"
       />
     </div>
   </section>

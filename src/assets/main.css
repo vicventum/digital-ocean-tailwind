@@ -1,12 +1,12 @@
-/* 2-5.1 - Agregando fuente externa */
+/* Agregando fuente externa */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-/* 2-5.1 - Agregando fuente local */
+/* Agregando fuente local */
 @font-face {
   font-family: 'CascadiaCode';
   src: url('./fonts/CascadiaCode.ttf');
 }
 
-/* 1-5.5 - Agregando archivo de entrada de Tailwind CSS
+/* Agregando archivo de entrada de Tailwind CSS
 */
 @tailwind base;
 @tailwind components;
@@ -29,8 +29,6 @@
   [multiple],
   textarea,
   select {
-    /* @apply w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500; */
-    /* @apply rounded-lg border border-slate-200 px-4 py-3 shadow-sm focus:border-slate-300 focus:shadow-input-focus; */
     @apply rounded-lg border border-slate-200 px-4 py-3 shadow-sm focus:border-slate-300 focus:ring-0;
   }
   [type='checkbox'],
@@ -38,28 +36,25 @@
     @apply rounded-lg border-slate-200 text-slate-300 focus:ring-slate-300;
   }
 
-  /* 2-2.1 - Agregando estilos globales */
+  /* Agregando estilos globales */
   body {
     /* margin: 2.5rem;
-	display: flex;
-	gap: 1.6rem;
-	flex-direction: column;
-	background-color: #ececec; */
-
-    /* 2-2.2 - Agregando estilos por medio de las clases de Tailwind a archivo CSS */
-    /* @apply flex flex-col gap-custom-size; */
-    /* 2-2.4 - Usando la clase personalizada que creamos */
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    background-color: #ececec; */
+    
     @apply bg-slate-50;
   }
 }
 
-/* 2-3.1 - Creando clase de componente de Tailwind */
+/* ? Creando clase de componente de Tailwind */
 @layer components {
   .btn-primary {
     @apply rounded bg-indigo-500 px-4 py-2 text-white;
   }
-  /* 2-3.2 - Creando clase de componente para componente complejo */
-  .panel {
+  /* Creando clase de componente para componente complejo */
+  /* .panel {
     @apply w-80 border border-indigo-500;
 
     .panel__title {
@@ -71,5 +66,5 @@
     .panel__body p {
       @apply mb-3 leading-7;
     }
-  }
+  } */
 }

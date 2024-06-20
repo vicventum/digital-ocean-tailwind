@@ -64,9 +64,7 @@ const serviceData = [
 
 <template>
   <section class="mt-20 bg-slate-100 py-20">
-    <div
-      class="container grid items-center gap-y-8 text-pretty lg:grid-cols-[1fr_36%_1fr]"
-    >
+    <div class="container grid items-center gap-y-8 text-pretty lg:grid-cols-[1fr_36%_1fr]">
       <article class="space-y-4 text-center md:pr-9 md:text-left">
         <h2 class="text-4xl font-bold text-do-blue-dark">See what you can save</h2>
         <p class="text-xl font-medium tracking-tight text-slate-500">
@@ -77,7 +75,12 @@ const serviceData = [
       </article>
 
       <!-- SECOND CARD -->
-      <BaseCard color="bg-do-blue-dark" padding="p-6">
+      <BaseCard
+        color="bg-do-blue-dark"
+        padding="p-6"
+        data-sal="slide-right"
+        data-sal-duration="1000"
+      >
         <h2 class="mb-5 text-4xl font-bold text-white">Basic VMs</h2>
         <p class="mb-10 text-slate-300">
           Easy, fast, and flexible compute built for a range of needs.
@@ -101,7 +104,7 @@ const serviceData = [
       </BaseCard>
 
       <!-- THIRD CARD -->
-      <BaseCard padding="p-6">
+      <BaseCard padding="p-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="1000">
         <h2 class="mb-5 text-4xl font-bold">Monthly cost</h2>
         <p class="mb-10">Estimated monthly spend.</p>
 
